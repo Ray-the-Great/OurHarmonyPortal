@@ -2,7 +2,7 @@
     min-width: 900px; /* Add a minimum width of 320 pixels */
     /* Use vendor prefixes for cross-browser compatibility */
 
-    background-image: url('Pics/Portal Background - Staar Picture.html');
+    background-image: url('STAAR.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    width: 406px;
+    width: 100px;
     height: 30px;
     margin: 20px auto 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
