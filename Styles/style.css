@@ -2,7 +2,7 @@
     min-width: 900px; /* Add a minimum width of 320 pixels */
     /* Use vendor prefixes for cross-browser compatibility */
 
-    background-image: url('./Images/STAAR.png');
+    background-image: url('Images/STAAR.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
