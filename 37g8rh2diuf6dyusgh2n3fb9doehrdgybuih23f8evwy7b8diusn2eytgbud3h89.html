@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0.3; url=https://digitalserpant.github.io/MyHarmonyPortal/Sub/index.html">
+    <title>OurHarmonyPortal</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
   </head>
   <body>
-  </body>
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <h1>This is the Redirected Page</h1>    
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
   <script>
-  Cookies.set('Verifide', 'close', { expires: 0.2});
+    // Wait for the page to finish loading
+window.onload = function() {
+  // Code to execute after the page has finished loading
+  console.log("The page has finished loading.");
+  const queryString = window.location.search;
+
+  // Check if a specific parameter is present in the query string
+  if (queryString.includes("code")) {
+    // Do something if the parameter is present
+    Cookies.set('Verifide', 'close', { expires: 0.2});
+    console.log("The 'code' parameter is present in the query string.");
+    window.location.href = "https://myharmonyportal.github.io/home/Sub/index.html";
+  } else {
+    // Do something else if the parameter is not present
+    Cookies.remove('Verifide');
+    console.log("The 'code' parameter is not present in the query string.");
+    window.location.href = "index.html";
+  }
+};
+
+    // Get the query string from the URL
+
+
+ 
   </script>
+  </body>
+
 </html>
